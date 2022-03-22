@@ -7,12 +7,10 @@ import { getBody } from "./bible/index.js";
 const connectTwitter = new Twitter(config);
 
 scheduleJob("5 */1 * * *", async () => {
-  const verse = await getBody();
-
   connectTwitter.getInstance().post(
     "statuses/update",
     {
-      status: verse,
+      status: await getBody(),
     },
     function (err, data, response) {
       if (err) {

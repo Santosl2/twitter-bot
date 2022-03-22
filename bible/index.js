@@ -31,10 +31,11 @@ async function getBody() {
     ${body.text}
     \n\n
     ${body.name} ${body.chapter}:${body.number}
+    
   `;
 
   verses.push(body.text);
-  console.log(bodyToPost);
+  return bodyToPost;
 }
 
 export { getBody };
