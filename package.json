@@ -1,0 +1,13 @@
+{
+  "name": "twitterbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "node-schedule": "^2.1.0",
+    "twit": "^2.2.11"
+  }
+}
