@@ -6,6 +6,8 @@ import { getBody } from "./bible/index.js";
 
 const connectTwitter = new Twitter(config);
 
+console.log("Twitter BOT is started...");
+
 scheduleJob("5 */1 * * *", async () => {
   connectTwitter.getInstance().post(
     "statuses/update",
